@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товар</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header> <!-- Такий же хедер, як в index.html --></header>
+
+  <main class="container">
+    <div class="product-img">Чорний квадрат</div>
+    <h1 class="product-title">Назва товару</h1>
+    <div class="product-price">Ціна</div>
+    <button class="btn" onclick="addToCart(new URLSearchParams(window.location.search).get('id'))">Додати в кошик</button>
+  </main>
+
+  <footer> <!-- Такий же футер --></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
